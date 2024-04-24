@@ -426,6 +426,13 @@ button[type="submit"]:hover {
 .gallery-item {
     margin: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide overflow for zoom effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Include box-shadow transition */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.509); /* Add shadow on hover for 3D effect */
 }
 
 .gallery-item img {
@@ -433,4 +440,9 @@ button[type="submit"]:hover {
     height: 400px;
     object-fit: cover;
     border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
 }
