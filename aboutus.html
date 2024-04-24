@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mauli Creations</title>
+    <style>
+        header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.search-panel input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-panel button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.auth-buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #555;
+}
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .background-blur {
+            
+            background-image: url('aboutbgimg.jpg');
+            height: 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+
+        .content {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 999;
+            text-align: center;
+            color: white;
+            width: 80%;  
+            background: rgba(0, 0, 0, 0.5);  
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            font-size: large;
+        }
+
+         footer {
+            text-align: center;
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.8); 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="site-title">
+                <h1>Mauli Creations</h1>
+            </div>
+            
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+<div class="background-blur"></div>
+
+
+
+<div class="content">
+    <h2>Welcome to Mauli Creations</h2>
+    <p>Welcome to Mauli Creations, your premier destination for exquisite ethnic Indian kurtis that blend traditional craftsmanship with contemporary style. Established with a passion for cultural heritage, our shop celebrates the rich tapestry of Indian fashion. Each piece in our collection is thoughtfully curated to bring you the vibrant colors, intricate patterns, and fine fabrics that Indian attire is renowned for.</p>
+    <p>At Mauli Creations, we are dedicated to offering unique designs that not only embrace timeless elegance but also empower the modern woman. Whether you're dressing for a festive occasion or simply adding a touch of ethnic flair to your everyday wear, Mauli Creations provides exceptional quality and style to meet your needs. Join us on a sartorial journey where tradition meets trends, and every purchase becomes a cherished part of your wardrobe.</p>
+</div>
+
+<footer>
+    <p>Copyright © 2024 Mauli Creations. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
