@@ -69,3 +69,26 @@ contactForm.addEventListener('submit', (e) => {
     alert('Message sent successfully!');
     contactForm.reset();
 });
+
+
+//log in and signup redirect 
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the signup button element
+    const signupButton = document.getElementById('signup-btn');
+
+    // Add click event listener to the signup button
+    signupButton.addEventListener('click', function() {
+        // Redirect to the signup.html page
+        window.location.href = 'signup.html';
+    });
+
+    // Get the login button element
+    const loginButton = document.getElementById('login-btn');
+
+    // Add click event listener to the login button
+    loginButton.addEventListener('click', function() {
+        // Redirect to the login.html page
+        window.location.href = 'login.html';
+    });
+});
