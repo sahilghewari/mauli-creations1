@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('aboutbgimg.jpg'); 
+            background-size: cover;
+            color: #fff;
+        }
+
+        header, footer {
+            background-color: #333;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        header .navbar, footer .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .navbar:hover, footer .footer-content:hover {
+            background-color: #555;
+        }
+
+        .site-title h1, footer .footer-content div {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo img, .social img {
+            max-height: 40px;
+            vertical-align: middle;
+        }
+
+        .menu, .social {
+            list-style-type: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li, .social li {
+            margin-right: 20px;
+        }
+
+        .menu a, .social a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .auth-buttons button, .footer-content button {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: rgba(177, 183, 138, 0.9);
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button[type="submit"] {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            padding: 20px 10px;
+            font-size: 14px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer div, footer address {
+            margin: 5px 0;
+        }
+
+        .social li {
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="site-title">
+                <h1>Mauli Creations</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center;">Contact Us</h2>
+        <form action="/submit-contact-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content" >
+
+            <div class="add">
+            <address style="font-size: 14px;">
+                Email: <a href="mailto:contact@maulicreations.com">contact@maulicreations.com</a><br>
+                Phone: +91 123 456 7890<br>
+                Address: 123 Fashion Street, Mumbai, India
+            </address>
+            </div>
+
+            <div style="font-size: 14px;">&copy; 2024 Mauli Creations. All rights reserved.</div>
+
+            <ul class="social" >
+                <li><a href="https://facebook.com"><img src="fblogo.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com"><img src="twitterlogo.png" alt="Twitter"></a></li>
+                <li><a href="https://instagram.com"><img src="instalogo.png" alt="Instagram"></a></li>
+            </ul>
+        
+
+    </footer>
+
+</body>
+</html>
